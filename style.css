@@ -25,3 +25,30 @@ h3 {
     letter-spacing: 0.01em;
 
 }
+
+.bogbog{
+	animation-name: animation;
+	animation-duration: 4s;
+	animation-play-state: running;
+}
+
+.play{
+	border: solid rgba(0,0,0,.5) 1px;
+	border-radius: 50px;
+	background: linear-gradient(to right, yellow, red);
+	width: 200px;
+	height: 30px;
+}
+
+.play:disabled{
+	border: solid rgba(0,0,0,.5) 1px;
+	border-radius: 50px;
+	background: rgba(0,0,0,.5);
+	width: 200px;
+	height: 30px;
+}
+
+@keyframes animation {
+ 50%{ transform: rotateY(180deg);}
+ 100%{ transform: rotateY(360deg); animation-play-state: paused;}
+}
