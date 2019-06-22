@@ -9,7 +9,7 @@ const button = document.querySelector('.play')
 var SetGradient = () => {
   body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
   hex.textContent = "Hex Color: " + color1.value + ", " + color2.value;
-  css.textContent = "CSS Property: " + body.style.background + ";";
+  css.textContent = "background: " + body.style.background + ";";
   button.style.background = "linear-gradient(to right, " + color2.value + ", " + color1.value + ")";
 }
 
